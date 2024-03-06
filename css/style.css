@@ -5,6 +5,13 @@
     box-sizing: border-box;
     font-family: "SF-Pro-Text-Regular";
 }
+body {
+    background: var(--color-primario);
+}
+
+.banner {
+    position: absolute;
+}
 .header{
     width: 100%;
     padding: 0 .5em;
@@ -68,6 +75,7 @@
 }
 .titulo__balance{
     background: fuchsia;
+    color: var(--color-ternario);
     display: flex;
     height: 130px;
     justify-content: space-between;
@@ -79,11 +87,62 @@
     display: flex;
     flex-direction: column;
 }
+.balance__one,
+.balance__two {
+    display: flex;
+    flex-direction: column;
+}
+.balance__one small,
+.balance__two small {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: "SF-Pro-Text-Medium";
+}
 
+.balance__one label,
+.balance__two label {
+    font-size: 1.3em;
+    font-family: "SF-Pro-Text-Bold";
+}
 
+.balance__one progress[value] {
+    --color: var(--color-secundario);
+    --background: var(--color-ternario);
+    background: var(--background);
+}
 
+.balance__two progress[value] {
+    --color: var(--color-cuarto);
+    --background: var(--color-ternario);
+    background: var(--background);
+}
 
+progress[value] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    margin: 0 10px;
+    height: .5em;
+    border-radius: 10em;
+}
 
+.balance__one progress[value]::-webkit-progress-bar,
+.balance__two progress[value]::-webkit-progress-bar {
+    border-radius: 10em;
+    height: .5em;
+    background: var(--background);
+}
+
+progress[value]::-webkit-progress-value {
+    border-radius: 10em;
+    background: var(--color);
+}
+
+progress[value]::-moz-progress-bar {
+    border-radius: 10em;
+    background: var(--color);
+}
 
 
 .footer{
@@ -98,4 +157,9 @@
 }
 .footer ul li {
     list-style: none;
+    margin: .5em 0;
+}
+
+.footer ul li a img {
+    width: 2em;
 }
