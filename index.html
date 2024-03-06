@@ -4,20 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header class="header">
-        <div class="header_logo">
-            <div class="logo_icono">icono</div>
-            <div class="logo_titulo">invento</div>
+        <div class="header__logo">
+            <div class="logo__icono">
+                <img src="storage/img/logo.svg">
+            </div>
+            <div class="logo__titulo">invento</div>
         </div>
-        <div class="header_menu">
+        <div class="header__menu">
             <i class='bx bx-menu'></i>
         </div>
     </header>
-    <footer>
-        
+    <main class="main">
+        <section class="main__titulo">
+            <article class="titulo__card">
+                <h2>Hi, Arthur!</h2>
+                <p>here’s your balance.</p>
+            </article>
+            <article class="titulo__balance">
+                <div class="balance__one">
+                    <small>savings</small>
+                    <label for="savings"><sub>$</sub> 15,615</label>
+                    <progress id="savings" max="100" value="70"></progress>
+                </div>
+                <div class="balance__two">
+                    <small>assets</small>
+                    <label for="savings"><sub>$</sub> 9,615</label>
+                    <progress id="savings" max="100" value="40"></progress>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul>
+            <li>
+                <a href="#"><img src="storage/img/icon.svg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="storage/img/icon_1.svg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="storage/img/icon_2.svg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="storage/img/icon_3.svg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="storage/img/icon_4.svg"></a>
+            </li>
+        </ul>
     </footer>
 </body>
 </html>
