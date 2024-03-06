@@ -16,7 +16,7 @@ body {
     width: 100%;
     padding: 0 .5em;
     /* height: 60px; */
-    background: darkgoldenrod;
+    background: #33404f;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -50,10 +50,10 @@ body {
     color: var(--color-ternario);
 }
 .main__titulo{
-    background: red;
+    background: #33404f;
 }
 .titulo__card{
-    background: green;
+    background: #33404f;
     display: flex;
     flex-direction: column;
     height: 120px;
@@ -74,7 +74,7 @@ body {
     text-transform: capitalize;
 }
 .titulo__balance{
-    background: fuchsia;
+    background: #33404f ;
     color: var(--color-ternario);
     display: flex;
     height: 130px;
