@@ -22,7 +22,7 @@
     position: sticky;
     z-index: 2;
     top: 0;
-    /* background: red; */
+    background: var(--color-ternario)
 }
 
 .header__logo {
@@ -188,7 +188,7 @@
 }
 .cards__item {
     flex: 1;
-    min-width: 60%;
+    min-width: 200px;
     background: url(../storage/img/card.svg);
     background-repeat: no-repeat;
     background-position: top;
@@ -201,14 +201,14 @@
 }
 .cards__item h2 {
     color: var(--color-ternario);
-    font-family: "";
+    font-family: "SF-Pro-Text-Bold";
 }
 .cards__item small {
     position:absolute;
-    top: 10px;
-    right: 5px;
+    top: 30px;
+    right: 4vw;
     color: var(--color-ternario);
-    font-family: "SF-pro-text-Semi";
+    font-family: "SF-pro-text-Semibold";
 }
 .cards__item img {
     position: absolute;
@@ -216,8 +216,6 @@
     left: 2vw;
     bottom: 20px;
 }
-
-
 
 
 
