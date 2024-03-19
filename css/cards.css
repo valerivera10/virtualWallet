@@ -1,5 +1,4 @@
-@import url(variables.css);
-
+@import url(variable.css);
 
 * {
     margin: 0;
@@ -22,7 +21,7 @@
     position: sticky;
     z-index: 2;
     top: 0;
-    background: var(--color-ternario)
+    background: var(--color-ternario);
 }
 
 .header__logo {
@@ -168,7 +167,7 @@
 .description__close i {
     /* background: red; */
     border-radius: 100%;
-    padding: 2px;
+    padding: 5px;
     background: var(--color-secundario);
     color: var(--color-ternario);
 }
@@ -176,17 +175,17 @@
     grid-area: cards;
 }
 .main__cards{
-    background: green;
+    /* background: green; */
     grid-area: colection;
     display: flex;
     gap: 10px;
-    padding: 1px;
+    /* padding: 10px ; */
     flex-direction: row;
 
-    height: 350px;
+    height: 320px;
     overflow-x: scroll;
 }
-.cards__item {
+.cards__item{
     flex: 1;
     min-width: 200px;
     background: url(../storage/img/card.svg);
@@ -197,25 +196,30 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;   
+    position: relative;
 }
-.cards__item h2 {
+.cards__item h2{
     color: var(--color-ternario);
     font-family: "SF-Pro-Text-Bold";
 }
-.cards__item small {
-    position:absolute;
+.cards__item small{
+    position: absolute;
     top: 30px;
     right: 4vw;
     color: var(--color-ternario);
-    font-family: "SF-pro-text-Semibold";
+    font-family: "SF-Pro-Text-Semibold";
 }
-.cards__item img {
+
+.cards__item img{
     position: absolute;
     width: 35%;
     left: 2vw;
     bottom: 20px;
 }
+
+
+
+
 
 
 

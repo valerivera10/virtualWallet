@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/virtualWallet/css/balance.css">
+    <link rel="stylesheet" href="../css/balance.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header class="header">
         <div class="header__logo">
             <div class="logo__icono">
-                <img src="../storage/img/logo2.svg">
+                <img src="../storage/img/logo.svg">
             </div>
             <div class="logo__titulo">invento</div>
         </div>
@@ -21,31 +21,53 @@
     </header>
 
     <main class="main">
-        <article class="balance">
-            <div class="balance_circle"></div>
-            <div class="balance_total"></div>
-        </article>
-        <article class="report">
-            <article>
+        <section class="balance">
+            <article class="balance__circle">
+                
+            </article>
+            <article class="balance__total">
+                <div>
+                    <h3>total</h3>
+                    <h5>balance</h5>
+                    <h2><sub>$</sub> 241,417</h2>
+                </div>
+            </article>
+        </section>
+        <section class="report">
+            <article class="report__accounting">
                 <button>assets</button>
                 <button>debt</button>
                 <button>income</button>
             </article>
+            <article class="report__week">
+                <img src="../storage/img/report.svg">
+            </article>
         </section>
-        <article class="process"></section>
+        <section class="process">
+            <article class="process__card">
+                <div class="card__image">
+                    <img src="../storage/img/card_process.svg">
+                </div>
+                <div class="card__description">
+                    <div class="process__close"><i class='bx bx-x'></i></div>
+                    <div>
+                        <h3>spending.</h3>
+                        <p>You forgot to add debt card number at payment #1323. Add it now.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
     </main>
-
-
     <footer class="footer">
         <ul>
             <li>
                 <a href="#"><img src="../storage/img/icon.svg"></a>
             </li>
             <li>
-                <a href="#"><img src="../storage/img/icon_1.svg"></a>
+                <a href="balance.html"><img src="../storage/img/icon_2_select.svg"></a>
             </li>
             <li>
-                <a href="balance.html"><img src="../storage/img/icon_2.svg"></a>
+                <a href="cards.html"><img src="../storage/img/icon_2.svg"></a>
             </li>
             <li>
                 <a href="#"><img src="../storage/img/icon_3.svg"></a>

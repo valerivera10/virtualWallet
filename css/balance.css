@@ -1,4 +1,4 @@
-@import url(variables.css);
+@import url(variable.css);
 
 * {
     margin: 0;
@@ -7,6 +7,15 @@
     font-family: "SF-Pro-Text-Regular";
 }
 
+.banner{
+    position: absolute;
+    z-index: -1;
+}
+.banner img{
+    width: 100%;
+    height: 105vh;
+    object-fit: cover;
+}
 .header {
     width: 100%;
     padding: 0 .5em;
@@ -17,10 +26,10 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    position: sticky;
+    position: fixed;
     z-index: 2;
     top: 0;
-    background: var(--color-ternario)
+    /* background: var(--color-primario); */
 }
 
 .header__logo {
@@ -41,7 +50,7 @@
 
 .logo__titulo {
     /* background: orange; */
-    color:  var(--color-primario);;
+    color: var(--color-ternario);
     font-family: "SF-Pro-Text-Bold";
     text-transform: uppercase;
 }
@@ -52,29 +61,39 @@
 
 .header__menu i {
     font-size: 3em;
-    color: var(--color-primario);
+    color: var(--color-ternario);
 }
 
-.balance {
-    /*background: red;*/
+
+.balance{
+    /* background: red; */
     width: 100%;
-    height: 25vh;
+    height: 32vh;
+    position: relative;
+    overflow: hidden;
+ 
 }
-
-.balance_circle {
+.balance__circle{
     background: var(--color-primario);
     width: 110%;
-    height: 450px;
-    border-bottom-right-radius: 70%;
-    border-bottom-left-radius: 70%;
+    height: 53vh;
+    border-radius:100%;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -460px;
+    left: -20px;
     right: 0;
-    margin: 0 auto ;
+    margin: 0 auto;
+    scale: 2;
+}
+.balance__circle div{
+    width: 20px;
+    height: 20px;
+    background: red;
+    position: relative;
+    top: 100px;
 }
 
-.balance_total {
+.balance__total{
     background: var(--color-secundario);
     width: 200px;
     height: 200px;
@@ -82,53 +101,124 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: ;
+    bottom: 10px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--color-ternario);
+    font-family: "SF-Pro-Text-Bold";
     text-transform: capitalize;
 }
-
-.balance_total div {
+.balance__total div{
+    /* background: red; */
     margin-top: 65px;
 }
-.report {
-    width: 100%;
-    position: relative;
-    top: 100px;
-    padding: 20px .8em;
-}
 
+.report{
+    width: 100%;
+    /* background: red; */
+    position: relative;
+    padding: 15px .8em;
+}
 .report__accounting {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.report__accounting button {
+.report__accounting button{
     background: var(--color-ternario);
     padding: 5px 15px;
     border-radius: 15px;
     font-family: "SF-Pro-Text-Regular";
     font-size: 1em;
-    border: 1px solid var(--color-cuarto);
-    color: var(--color-cuarto);
+    border: 1px solid var( --color-cuarto);
+    color: var( --color-cuarto);;
     text-transform: capitalize;
 }
-.report__accounting button:first-child {
+.report__accounting button:first-child{
     background: var(--color-primario);
     color: var(--color-ternario);
 }
-.report__accounting button:nth-child(2) {
+.report__accounting button:nth-child(2){
     background: var(--color-ternario);
     color: var(--color-secundario);
     border-color: var(--color-secundario);
 }
-.report__accounting button:last-child {
+.report__accounting button:last-child{
     background: var(--color-ternario);
 }
+
+.report__week img{
+    /* background: red; */
+    width: 100%;
+    height: 25vh;
+    object-fit: contain;
+    margin-top: 15px;
+}
+
+
+
+
+.process{
+    background: var(--color-secundario-transparent);
+    height: 150px;
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    padding: 0 0.8rem;
+}
+
+.process__card{
+    width: 100%;
+    /* background: violet; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__image{
+    /* background: blue; */
+    flex: 1;
+}
+.card__image img{
+    width: 100%;
+    object-fit: contain;
+}
+.card__description{
+    /* background: olivedrab; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+    flex: 2;
+}
+.card__description div h3{
+    text-transform: capitalize;
+    color: var(--color-primario);
+    font-family: "SF-Pro-Text-Bold";
+}
+.card__description div p{
+    color: var(--color-cuarto);
+    font-family: "SF-Pro-Text-Light";
+}
+.process__close i {
+    /* background: red; */
+    border-radius: 100%;
+    padding: 5px;
+    background: var(--color-secundario);
+    color: var(--color-ternario);
+}
+
+
+
 
 
 
 
 .footer {
     width: 100%;
+    height: 60px;
     background: var(--color-primario);
     position: fixed;
     bottom: 0;
